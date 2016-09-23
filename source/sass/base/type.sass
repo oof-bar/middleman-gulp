@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-weight: $type-weight-bold
+
+  * + &
+    margin-top: 1em
+
+p
+  & + p,
+  & + ul
+    margin-top: 1em
+
+strong
+  font-weight: $type-weight-bold
+
+code
+  +type-technical
