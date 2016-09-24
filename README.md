@@ -16,9 +16,10 @@ $ git remote add origin https://github.com/user/repo.git
 $ git push origin master
 ```
 
-…install the `npm` dependencies…
+…install the Ruby and Node dependencies…
 
 ```
+$ bundle
 $ npm install
 ```
 
