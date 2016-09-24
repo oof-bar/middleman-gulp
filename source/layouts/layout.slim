@@ -5,9 +5,11 @@ html
     meta charset="utf-8"
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
+    meta name="description" content="#{data.site.description}"
 
     == stylesheet_link_tag :app
 
   body class="#{page_classes}"
+    h1 = data.site.title
     == yield
     == javascript_include_tag :app
