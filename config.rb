@@ -40,6 +40,10 @@ configure :build do
   # activate :minify_javascript
 end
 
+# Helpers
+require "helpers/tools"
+helpers Tools
+
 activate :external_pipeline,
   name: :gulp,
   command: build? ? './node_modules/gulp/bin/gulp.js build' : './node_modules/gulp/bin/gulp.js watch',
