@@ -38,7 +38,7 @@ var templates = {
     return gulp.src(paths.stylesheets.main)
       .pipe(sass({
         outputStyle: (compress ? 'compressed' : 'expanded'),
-        includePaths: require('node-neat').includePaths.concat(require('node-reset-scss').includePath)
+        includePaths: [require('node-reset-scss').includePath]
       }).on('error', sass.logError))
       .pipe(gulp.dest(paths.stylesheets.out));
 
